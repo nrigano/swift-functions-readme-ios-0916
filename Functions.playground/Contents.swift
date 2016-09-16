@@ -28,17 +28,21 @@ func sayHelloToCat(catName: String) {
     print("Hello, \(catName), why do you sleep so much?")
 }
 
+sayHelloToCat("Mittens")
 
-func sayHello(name: String) {
-    print("Hello \(name), why do you sleep so much?")
+let catFriend = "Socks"
+sayHelloToCat(catFriend)
+
+// Uncomment this line to see the error that is printed in the console.
+sayHelloToCat("Frank")
+
+
+var catName1 = ("Frank")
+var catName2 = ("Sam")
+var catName3 = ("Greta")
+
+func sayHelloAllCats() {
+    print("Hey there, \(catName1).  Hi, \(catName2).  And feliciatations to you, \(catName3)!")
 }
-
-sayHello(name: "Mittens")
-// Prints "Hello Mittens, why do you sleep so much?"
-
-sayHello(name: "Socks")
-// Prints "Hello Socks, why do you sleep so much?"
-
-let dumpsterCat = "Rocky"
-sayHello(name: dumpsterCat)
-// Prints "Hello Rocky, why do you sleep so much?"
+sayHelloAllCats()
+sayHelloAllCats("Hewey", "Dewey", "Lewey")
